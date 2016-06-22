@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html >
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css"/>
+		
+		<style>
+			.mui-table h4,.mui-table h5,.mui-table .mui-h5,.mui-table .mui-h6,.mui-table p{
+		        margin-top: 0;
+		    }
+		    .mui-table h4{
+		        line-height: 21px;
+		        font-weight: 500;
+		    }
+		
+		    .mui-table .oa-icon{
+		        position: absolute;
+		        right:0;
+		        bottom: 0;
+		    }
+		    .mui-table .oa-icon-star-filled{
+		        color:#f14e41;
+		    }
+		    
+		    .test_ul li{
+				float:left;
+			}
+			li {list-style-type:none; margin: 2px;}
+			ul {text-align:center;text-align:left;}
+		</style>
+	</head>
+
+	<body style="width: 100%;">
+		<div class="mui-content">
+			<span style="position:absolute;line-height: 44px; color: #000000;">cc-1</span>
+			<div style="padding:10px 10px 10px 50px; text-align: right;" >		
+				<ul style="display: inline-block;list-style: none;padding:0;margin:0;position: relative;line-height: 24px;font-size: 10px;right: 0;">
+					<li style="display: inline; margin-left: 15px;">
+						<span style="color: #DFDFDF">关闭</span>
+					</li>
+					<li style="display: inline;margin-left: 15px;">
+						<span style="color: #007BC8">正在运行</span>
+					</li>
+					<li style="display: inline;margin-left: 15px;">
+						<span style="color: #FFC000">小故障</span>
+					</li>
+					<li style="display: inline;margin-left: 15px">
+						<span style="color:red">严重故障</span>
+					</li>
+				</ul>
+			</div>
+			<div >
+			    <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+			        <li class="mui-table-view-cell">
+			            <div class="mui-table">
+			                <div class="mui-table-cell mui-col-xs-10">
+			                	<h4 class="mui-ellipsis">第一层</h4>
+			                </div>
+			            </div>
+			             <div class="mui-table-cell mui-col-xs-2" style="text-align: left;">
+			                   	<ul class="test_ul" style="text-align: left;">
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined md-trigger" onClick="locking()">
+											A101
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A102
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A103
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A104
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A105
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A106
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A107
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A108
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A109
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A110
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A111
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A112
+										</button>
+			                   		</li>
+			                   	</ul>
+			                </div>
+			        </li>
+			       
+			    </ul>
+		    </div>
+		    <!--
+        	作者：jldaii@qq.com
+        	时间：2016-06-07
+        	描述：弹出框
+        -->
+        
+        <div id="ly" style="position: absolute; top: 0px; filter: alpha(opacity=60); background-color: #777;
+         	z-index: 2; left: 0px; display: none;">
+    	</div>
+		 <!-- 浮层框架开始 -->
+	    <div id="Layer2" align="center" style="position: absolute; z-index: 3; left: expression((document.body.offsetWidth-540)/2); top: expression((document.body.offsetHeight-170)/10);
+	         background-color: #fff; display: none;" >
+	        <table width="540" height="300" border="0" cellpadding="0" cellspacing="0" style="border: 0  solid #e7e3e7;
+	             border-collapse: collapse ;" >
+	            <tr>
+	                <td style="background-color: #73A2d6; color: #fff; padding-left: 4px; padding-top: 2px;
+	                     font-weight: bold; font-size: 12px;" height="10" valign="middle">
+	                     <div align="right">
+	                     	<a href=JavaScript:; class="STYLE1" onclick="Lock_CheckForm(this);">
+	                     		[关闭]
+	                     	</a> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td height="130" align="center">
+	                </td>
+	            </tr>
+	        </table>
+	    </div>
+	    <!--  浮层框架结束-->
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+	<script>   
+	  	function locking(){   
+	   	document.all.ly.style.display="block";   
+	   	document.all.ly.style.width=document.body.clientWidth;   
+	   	document.all.ly.style.height=document.body.clientHeight;   
+	   	document.all.Layer2.style.display='block';  
+	   	 
+	   	}   
+	  	function  Lock_CheckForm(theForm){   
+	   		document.all.ly.style.display='none';document.all.Layer2.style.display='none';
+	  		return false;   
+	   }   
+    </script>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+</html>

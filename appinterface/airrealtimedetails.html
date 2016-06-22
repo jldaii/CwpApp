@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html >
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css"/>
+		
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="Nifty Modal Window Effects with CSS Transitions and Animations" />
+		<meta name="keywords" content="modal, window, overlay, modern, box, css transition, css animation, effect, 3d, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="../css/default_popup.css" />
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+		<script src="../js/modernizr.custom.js"></script>
+		
+		
+		<style>
+			.mui-table h4,.mui-table h5,.mui-table .mui-h5,.mui-table .mui-h6,.mui-table p{
+		        margin-top: 0;
+		    }
+		    .mui-table h4{
+		        line-height: 21px;
+		        font-weight: 500;
+		    }
+		
+		    .mui-table .oa-icon{
+		        position: absolute;
+		        right:0;
+		        bottom: 0;
+		    }
+		    .mui-table .oa-icon-star-filled{
+		        color:#f14e41;
+		    }
+		    
+		    .test_ul li{
+				float:left;
+			}
+			li {list-style-type:none;}
+		</style>
+	</head>
+
+	<body style="width: 100%;">
+		<div class="mui-content">
+			<span style="position:absolute;line-height: 44px; color: #000000;">cc-1</span>
+			<div style="padding:10px 10px 10px 50px; text-align: right;" >		
+				<ul style="display: inline-block;list-style: none;padding:0;margin:0;position: relative;line-height: 24px;font-size: 10px;right: 0;">
+					<li style="display: inline; margin-left: 15px;">
+						<span style="color: #DFDFDF">关闭</span>
+					</li>
+					<li style="display: inline;margin-left: 15px;">
+						<span style="color: #007BC8">正在运行</span>
+					</li>
+					<li style="display: inline;margin-left: 15px;">
+						<span style="color: #FFC000">小故障</span>
+					</li>
+					<li style="display: inline;margin-left: 15px">
+						<span style="color:red">严重故障</span>
+					</li>
+				</ul>
+			</div>
+			<div >
+			    <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+			        <li class="mui-table-view-cell">
+			            <div class="mui-table">
+			                <div class="mui-table-cell mui-col-xs-10">
+			                	<h4 class="mui-ellipsis">第一层</h4>
+			                </div>
+			            </div>
+			             <div class="mui-table-cell mui-col-xs-2" style="text-align: left;">
+			                   	<ul class="test_ul" style="text-align: left;">
+			                   		<li>
+			                   			<button class="mui-btn mui-btn-primary mui-btn-outlined md-trigger" data-modal="modal-1">
+											A101
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A102
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A103
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A104
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A105
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A106
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A107
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A108
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A109
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A110
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A111
+										</button>
+			                   		</li>
+			                   		<li>
+			                   			<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+											A112
+										</button>
+			                   		</li>
+			                   	</ul>
+			                </div>
+			        </li>
+			       
+			    </ul>
+		    </div>
+		</div>
+		
+		
+		<!--
+        	作者：jldaii@qq.com
+        	时间：2016-06-07
+        	描述：弹出框
+        -->
+		
+		<div class="md-modal md-effect-1" id="modal-1" >
+			<div class="md-content" style="background: #D9D9D9;">
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+					<button class="md-close" style="background: #FFFFFF;color: #B50000;">Close me!</button>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="../js/classie.js"></script>
+		<script src="../js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '../js/';
+		</script>
+		<script src="../js/cssParser.js"></script>
+		<script src="../js/css-filters-polyfill.js"></script>
+		
+		
+		
+		
+		
+		
+	</body>
+	
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+</html>

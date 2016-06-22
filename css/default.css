@@ -1,0 +1,165 @@
+/*----header-----
+.header {         
+    position:relative;        
+    width:100%;  
+}
+.header a {
+    font-size:2.4rem;
+    font-weight:bold;
+    height:4rem;
+    line-height:4rem;
+    color:#fff;
+    display:block;
+    background-color:#fd3f3f;
+    text-align:center;
+    position:relative;    
+}
+.header a i
+{
+    position:absolute;
+    right:20px;  
+    font-weight:normal;
+    font-size:2.2rem;
+}
+
+*/
+/*----banner-----*/
+.banner{
+    width:100%;
+}
+.banner .swiper-slide {
+    background-repeat:no-repeat;
+    background-position:50% 20%;
+    background-size:cover;
+}
+.banner .swiper-slide-bg-1 {
+    background-image:url("../images/banner/banner1.jpg");
+}
+.banner .swiper-slide-bg-2 {
+    background-image:url("../images/banner/banner2.jpg");
+}
+.banner .swiper-slide-bg-3 {
+    background-image:url("../images/banner/banner3.jpg");
+}
+
+/* Swipe 幻灯片 */
+.swiper-container {
+        width: 100%;
+        height: 100%;        
+    }
+.swiper-slide {
+    height:170px!important;
+    text-align: center;
+    background: #fff;   
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/*----menu-----*/
+.menu {
+    background-color:#fff;
+    margin:10px 0;
+}
+.menu ul li.item {
+    width:25%;
+    float:left;
+    margin:16px 0;        
+
+}
+.menu ul li.item a {
+    background-color:#000000;
+    text-align:center;
+}
+
+    .menu .item img {
+        width:4rem;
+        margin:0 auto;
+        margin-bottom:6px;
+    }
+    .menu .item .name {            
+   
+        font-size:1.4rem;
+    }
+
+/*----goods-list-----*/
+.goods-list {
+    width:100%;
+    height:auto;
+    margin-bottom:90px;
+    
+}
+.goods-list .hd {
+    font-size:1.4rem;    
+    text-align:center;    
+    height:20px;
+    line-height:20px;
+    position:relative;    
+    overflow:hidden;
+    margin:0 5px;
+}
+.goods-list .hd .title {
+    display:inline;
+    padding:0 5px;
+    z-index:2;
+    background-color:#f1f1f1;
+}
+.goods-list .hd .title-line {            
+        position:absolute;
+        top:9px;                         
+        z-index:1;     
+        width:100%;    
+        height:1px;
+        background-color:#dadada;         
+}
+.goods-list .bd {
+    /*padding:0 15px;*/
+}
+.goods-list .bd .goods-item {
+    width:50%;    
+    float:left;  
+    margin-bottom:10px;                 
+}
+.goods-list .bd .goods-item a {
+    margin:0 5px;    
+    padding-bottom:15px;
+    display:inline-block;
+    background-color:#fff;       
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);/*-webkit代表谷歌内核识别码*/
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);/*-moz代表火狐内核识别码*/
+    /*阴影效果 {box-shadow: 
+        阴影类型：此参数可选。如不设值，默认投影方式是外阴影；如取其唯一值“inset”，其投影为内阴影；       
+        X轴偏移量：（正值阴影在对象的右边，负值阴影在对象左边）；
+        Y轴偏移量：（正值阴影在对象的底部，负值阴影在对象顶部）； 
+        阴影模糊半径：此参数可选，（值越大阴影的边缘就越模糊）；
+        阴影扩展半径：此参数可选，其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值时，则缩小； 
+        阴影颜色}*/
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+    /*opacity:0.85;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);*/
+}
+.goods-list .bd .goods-item .img img {
+    max-width:100%;
+}
+.goods-item .name {
+    margin:10px 0 10px 10px;
+    font-size:1.4rem;
+    color:#000;
+}
+.goods-item .price {
+    font-size:1.4rem;
+    color:#ff3c3f;
+    margin-left:10px;
+}

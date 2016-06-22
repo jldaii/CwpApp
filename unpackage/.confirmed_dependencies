@@ -1,0 +1,93 @@
+{
+	"index.html": {
+		"resources": [
+			"css/mui.min.css",
+			"images/logo_yidong.jpg",
+			"js/login/validatorLogin.js",
+			"src/assets/common/ajaxPoster.js",
+			"src/assets/css/login.css",
+			"css/app.css",
+			"src/assets/lib/tipBox/css/tip_box.css",
+			"fonts/mui.ttf",
+			"src/assets/lib/jquery/jquery-2.1.1.min.js",
+			"src/assets/lib/tipBox/js/tipBox.js",
+			"src/assets/lib/tipBox/images/arrow.png",
+			"src/assets/lib/tipBox/images/error.gif",
+			"src/assets/lib/tipBox/images/ico_close.gif",
+			"js/mui.min.js",
+			"js/update.js",
+			"appinterface/homepage.html",
+			"js/login/loginTest.js"
+		],
+		"refer": [
+			"appinterface/homepage.html"
+		]
+	},
+	"appinterface/homepage.html": {
+		"resources": [
+			"css/default.css",
+			"images/icoan-6.png",
+			"images/icon-10-1.png",
+			"images/icon-5.png",
+			"images/icon-4.png",
+			"images/icon-1.png",
+			"images/icon-9.png",
+			"images/icon-3.png",
+			"libs/echarts-all.js",
+			"images/icon-11.png",
+			"images/icon-2.png",
+			"appinterface/airconditioner.html",
+			"appinterface/maintenanceTaskList.html",
+			"appinterface/accessControl.html"
+		],
+		"refer": [
+			"appinterface/airconditioner.html",
+			"appinterface/maintenanceTaskList.html",
+			"appinterface/accessControl.html"
+		]
+	},
+	"appinterface/airconditioner.html": {
+		"resources": [
+			"js/mui.picker.min.js",
+			"appinterface/homepage.html",
+			"css/mui.picker.min.css"
+		],
+		"refer": [
+			"appinterface/homepage.html"
+		]
+	},
+	"appinterface/maintenanceTask.html": {
+		"resources": [
+			"images/about4_icon.png",
+			"images/bg.png",
+			"css/style_time_axis.css",
+			"js/jquery-1.7.2.min.js",
+			"appinterface/maintenanceTreatment.html"
+		],
+		"refer": [
+			"appinterface/maintenanceTreatment.html"
+		]
+	},
+	"appinterface/maintenanceTaskList.html": {
+		"resources": [
+			"libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+			"appinterface/maintenanceTask.html",
+			"libs/easymob-webim-sdk/json2.js",
+			"libs/easymob-webim-sdk/jquery-1.11.1.js",
+			"js/feedback.js",
+			"css/feedback-page.css",
+			"js/feedback-page.js",
+			"libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+			"js/mui.view.js"
+		],
+		"refer": [
+			"appinterface/maintenanceTask.html"
+		]
+	},
+	"appinterface/accessControl.html": {
+		"resources": [
+			"js/mui.picker.min.js",
+			"css/mui.picker.min.css"
+		]
+	}
+}

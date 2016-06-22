@@ -1,0 +1,67 @@
+
+#fileToUpload{width:350px}
+.webuploader-container{position:relative}
+.webuploader-element-invisible{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}
+.webuploader-pick{position:relative;display:inline-block;cursor:pointer;background:#00b7ee;padding:10px 15px;color:#fff;text-align:center;border-radius:3px;overflow:hidden}
+.webuploader-pick-hover{background:#00a2d4}
+.webuploader-pick-disable{opacity:.6;pointer-events:none}
+
+.icon-export-csv,.icon-import-outlook{background:url(../../../assets/img/improt/import.png)-135px  no-repeat;;width:135px;height:135px;border:1px solid #b8b8b8;cursor:default}
+.icon-import-vcard{background:url(../../../assets/img/improt/import.png)no-repeat;width:135px;height:135px;border:1px solid #b8b8b8;cursor:default}
+.icon-import-excel{background:url(../../../assets/img/improt/import.png)-270px no-repeat;width:135px;height:135px;border:1px solid #b8b8b8;cursor:default}
+.import-type-list{overflow:hidden;zoom:1;position:relative;z-index:11}
+.import-type-list li{float:left;width:170px;text-align:center;padding:15px 0 0;border:1px solid #ffffff}
+.import-type-list li.selected{background:#f1f1f1;border-color:#b9b9b9;border-bottom-color:#f1f1f1;padding-bottom:15px}
+.import-type-list li a{margin:1px;display:inline-block;position:relative}
+.dis-selected{position:absolute;left:0;top:52px;width:100%;height:32px;line-height:32px;background:#c3cfde;opacity:.7;filter:Alpha(Opacity=70);font-size:14px;color:#3a628e;display:none;font-weight:700}
+.dis-click .selected .dis-selected{display:inline}
+.import-type-list li p{padding-top:12px;font-weight:700;font-size:14px}
+.import-type-list li.selected a,.import-type-list li.selected a:hover{margin:0;border:2px solid #60a914}
+.import-type-list li a:hover{border:1px solid #60a914;cursor:pointer}
+
+
+.import-help{background:#f1f1f1;font-size:14px;padding:30px 20px 20px;margin-bottom:20px;overflow:hidden;zoom:1;border:1px solid #b9b9b9;position:relative;margin-top:-1px}
+.import-help .item{display:none}
+.help-img{padding-left:50px}
+.import-help .desc{padding-top:30px;border-top:1px dotted #ccc;margin-top:20px}
+.import-help h3{text-align:center;font-weight:700;margin-bottom:12px;color:#3a628e}
+.import-help .sub-h{color:#3a628e;padding:0}
+.import-help p{font-weight:700;margin-bottom:15px}
+.import-help p img{border:1px solid #ccc}
+.import-help p a:hover img{border-color:#60A914}
+.import-btn-bar{padding-top:20px}
+.import-success{background:#d6feb9}
+.import-success h3{color:#60a914}
+.import-help .tips{color:#999;font-size:12px}
+.import-help .tips a{color:#000}
+.import-help .tips a:hover{text-decoration:underline}
+
+
+.queue-list{margin:10px auto;border:3px dashed #ccc}
+.dnd-area{color:#bbb;padding:80px 0;text-align:center}
+.queue-list.filled{border:3px dashed transparent}
+.queue-list.webuploader-dnd-over{border:3px dashed #999}
+#exportHelp p{font-weight:700;margin-bottom:15px}
+
+.btn-alert,.btn-cancel,.btn-cancel-long,.btn-hot-sure-short,.btn-sure,.btn-sure-short{background:url(../../../assets/img/improt/btns.png) no-repeat!important;height:45px;border:none!important;text-align:center;font-size:16px!important;font-weight:700;cursor:pointer;width:227px;display:inline-block;line-height:45px;overflow:hidden}
+.btn-alert{background-position:0 0!important;width:324px;color:#666!important}
+.btn-sure{background-position:0 -90px!important;color:#fff!important}.confirm-warn .btn-sure{background-position:0 -45px!important}
+.btn-cancel{background-position:right -135px!important;width:87px;color:#666!important;margin:0 0 0 1em}
+.btn-cancel-long{background-position:0 -135px!important;color:#666!important;margin:0 0 0 1em}
+
+.file-box{background:#fff;width:100%;border:1px solid #ccc}
+.vcard-list{overflow:hidden;zoom:1;margin-bottom:15px}
+.vcard-list li{float:left;width:300px;height:150px;position:relative;margin:15px 15px 0;padding:10px;background:#f7f7f7;border:1px solid #e8e8e8;overflow:hidden;zoom:1}
+.vcard-list li.complete{background:#f0f5ff;border:1px solid #cee2f2}
+.vcard-list li.error{background:#ffebeb;border:1px solid #b50000}
+.vcard-list li .img{background:url(../../../assets/img/improt/import-file-types.png) no-repeat;width:60px;height:60px;float:left;margin-right:12px}
+.vcard-list li .vcard{background-position:-60px 0}
+.vcard-list li .csv{background-position:-120px 0}
+.vcard-list li .xls{background-position:0 0}
+.vcard-list li .name{line-height:22px;font-weight:700}
+.vcard-list li .status{clear:both;display:block;padding-top:5px;font-size:12px;line-height:18px}
+.vcard-list li .progress-bar{background:green;font-size:0;height:2px;overflow:hidden;width:0}
+.vcard-list li .remove{position:absolute;right:10px;top:5px}
+.vcard-list li .data,.vcard-list li .type,.vcard-list li.complete .progress-bar,.vcard-list li.error .progress-bar{display:none}
+
+

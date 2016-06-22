@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="/Controls/Fu/Contents/Style.css" type="text/css" />
+<script language="JavaScript" src="../JSClass/FusionCharts.js"></script>
+<div id="chartdiv" align="center">  FusionCharts. </div>
+<script type="text/javascript">
+       var chart = new FusionCharts("../Charts/FCF_MSLine.swf", "ChartId", "600", "350");
+       chart.setDataURL("/Lab/DemoData.aspx");		   
+       chart.render("chartdiv");
+</script>

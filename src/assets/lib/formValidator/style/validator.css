@@ -1,0 +1,94 @@
+.onShow
+{
+	background-color:#ffffe5;
+	border: 1px solid #ccc;			
+	font: normal 12px/34px Helvertica,Arial,sans-serif; 	
+	width:auto;
+	display:inline;
+	min-height:34px;		
+	_height:34px;	
+	vertical-align:baseline;
+	color: #666;
+	padding:0 8px;
+	position: absolute;		
+	z-index:99;
+	min-width:130px;
+	_width:130px;
+}
+
+.onFocus
+{
+    background:#fff url(../images/onFocus.gif) no-repeat 3px 6px;   	
+	font: normal 12px/34px Helvertica,Arial,sans-serif; 	
+	min-height:34px;		
+	_height:34px;	
+	vertical-align:baseline;
+	color: #666;
+	padding:0 26px;
+	position: absolute;		
+	z-index:99;	
+	min-width:285px;
+	_width:285px;	
+}
+.onError
+{
+	background:#fff url(../images/onError.gif) no-repeat 3px 6px;    			
+	font: normal 12px/34px Helvertica,Arial,sans-serif; 	
+	min-height:34px;		
+	_height:34px;		
+	vertical-align:baseline;
+	color: #C00;	
+	padding:0 26px;
+	position: absolute;		
+	z-index:99;	
+	min-width:285px;
+	_width:285px;
+}
+.onCorrect
+{
+    background:url(../images/onCorrect.gif) no-repeat 3px 3px;
+    padding-left:20px;
+	font-size: 12px;
+	min-height:34px;		
+	_height:34px;
+	vertical-align:middle;
+	min-width:285px;
+	_width:285px;
+}
+.onLoad
+{
+    background:url(../images/onLoad.gif) no-repeat 3px 3px;
+    padding-left:20px;
+	font-size: 12px;
+	line-height:34px; 
+	height:34px;
+	vertical-align:middle;	
+} 
+.onSuccess
+{
+    background:url(../images/onSuccess.gif) no-repeat 3px center;
+	min-height:34px;		
+	_height:34px;		
+	padding:0 26px;
+	position: absolute;		
+	z-index:99;	
+} 
+.onSendSuccess
+{
+	background:#dff0d8 url(../images/onSuccess.gif) no-repeat 3px 6px;    	
+	border: 1px solid #d6e9c6;		
+	font: normal 12px/34px Helvertica,Arial,sans-serif; 	
+	min-height:34px;		
+	_height:34px;		
+	vertical-align:baseline;
+	color: #468847;
+	padding:0 26px;
+	position: absolute;		
+	z-index:99;	
+	min-width:285px;
+	_width:285px;	
+}
+.tipArea {
+    position:relative;
+    width:0!important;
+}

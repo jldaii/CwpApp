@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>智慧园区</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!--引入CSS文件-->
+		<link rel="stylesheet" type="text/css" href="src/assets/css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="src/assets/lib/tipBox/css/tip_box.css"/>
+		<!--#include file="/index.html"-->
+		
+		<script src="js/mui.min.js"></script>
+		<script src="js/update.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="src/assets/lib/jquery/jquery-2.1.1.min.js"></script>
+		<!--提示窗脚本"-->
+		<script type="text/javascript" src="src/assets/lib/tipBox/js/tipBox.js"></script>
+		<!--数据交互脚本"-->
+		<script src="src/assets/common/ajaxPoster.js"></script>
+		<!--验证登录脚本"-->
+		<script type="text/javascript" src="js/login/validatorLogin.js"></script>
+		
+	</head>
+	
+	<style>
+		.div-height{border:1px solid #F00; width:300px; height:200px; background-color:#299CEF ;}
+		/*标题文字颜色 */
+		.text{text-align:center;size: a4;color: white;}
+		/* 圆形头像*/
+		.imgtest{margin-left:auto;margin-right:auto; overflow:hidden;}
+		.list_ul figcaption p{font-size:12px;color:#aaa;}
+		.imgtest figure div{display:inline-block;margin:5px auto;width:100px;height:100px;
+			border-radius:100px;border:2px solid #fff;overflow:hidden;-webkit-box-shadow:0 0 3px #ccc;
+			box-shadow:0 0 3px #ccc;}
+		.imgtest img{width:100%;min-height:100%; text-align:center;}	
+	</style>
+
+	<body>
+		<div style="background:#299CEF; height:200px;">
+			<div class="text" style=" text-align:center;">
+				智慧园区
+			</div>
+			
+			<div class="align-center">
+				<div class="imgtest">  
+ 					<figure style="text-align: center;" >
+						<div>
+							<img id="userImg" src="images/logo_yidong.jpg"/>
+						</div>  
+					</figure>
+ 				</div>
+			</div>
+		</div >
+			<div style="margin-top: 10px;">
+				<form class="mui-input-group">
+					<div class="mui-input-row">	
+						<input id="login_name" type="text" class="mui-input-clear" placeholder="请输入用户名">
+					</div>
+					<!-- 密码框-->
+					<div class="mui-input-row mui-password">
+						<input id="login_pwd" class="mui-input-password" data-input-password="3" type="password" placeholder="请输入密码">
+						<span class="mui-icon mui-icon-eye">
+						</span>
+					</div>
+				</form>
+			</div>
+			
+		<div style="margin-top: 10px;">
+			<div class="mui-content-padded" style="padding-top: 100px; text-align: center;">
+			   	<input id="btn-login" type="button" value="提  交" style="width: 200px; background: #299CEF; color: white;"/>
+			</div>
+		</div>
+
+	<!--账号提示窗-->
+	<div id="tipbox">
+		<div id="up_arrow"></div>
+		<div id="tip_content">
+			<!-- 内容 -->
+			<script type="text/javascript" src="js/login/js/login/validatorLogin.js"></script>
+			<div id="tip_icon" class="error"></div>
+			<div id="tip_text"></div>
+			<div id="tip_close" onclick="javascript:hideTipBox();"></div>
+		</div>
+		<div id="down_arrow"></div>
+	</div>
+	</body>
+</html>

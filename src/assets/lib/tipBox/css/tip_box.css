@@ -1,0 +1,89 @@
+﻿	#tipbox
+    {   
+    	position:absolute;
+    	display:none;
+    	z-index:9999;    	
+    }   
+    
+    #tip_arrow
+    {
+        width:19px;
+        height:10px;        
+        background-image:url(../images/arrow.png);
+        background-repeat:no-repeat;        
+    }
+    
+    #up_arrow
+    {
+        width:19px;
+        height:10px;        
+        background:url(../images/arrow.png) -20px 0;
+        overflow: hidden;
+        position: absolute;
+        top:-8px;
+        left:10px;
+        display:none;
+    }
+
+
+    #down_arrow
+    {
+        width:19px;
+        height:10px;        
+        background:url(../images/arrow.png);
+        overflow: hidden;
+        position: absolute;
+        bottom:-8px;        
+        left:10px;
+        display:none;
+    }
+       
+    #tip_content
+    {
+    	background-color:#ffffe5;
+    	border: solid 1px #F9F2A7;
+    	float:left;
+    	display:inline;    	
+    	padding-bottom:10px;        	
+    }
+    
+    #tip_icon
+    {
+        float:left;        
+        margin:10px 0 0 7px;                
+        width:14px;
+        height:14px;  
+        background-repeat:no-repeat;     
+        display:inline;   
+    }
+    
+    .tip_error
+    {
+         background:url(../images/error.gif);
+    }
+    
+    .tip_information
+    {
+    	 background-image:url(../images/information.gif);
+    }
+    
+    #tip_text
+    {
+    	float:left;
+        margin:10px 5px 0 10px;
+    	font: bold 12px/1.125 Arial,Helvetica,sans-serif,'微软雅黑';    	    	
+        width:auto;
+    	display:inline;      	
+    	color:#DA0000;
+    }
+    
+    #tip_close
+    {
+        float:right;
+        margin:5px;
+        width:12px;
+    	height:12px;
+    	background-image:url(../images/ico_close.gif);
+    	background-repeat:no-repeat;    	
+    	cursor:pointer;
+    }
